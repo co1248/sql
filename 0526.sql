@@ -845,3 +845,4 @@ select e.ename || '의 매니져는 ' || m.ename || '입니다.'
 from emp e, emp m
 where e.mgr = m.empno(+);
 --mgr에 null정보가 있고 empno는 다 정보가 있다.
+
