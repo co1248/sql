@@ -18,4 +18,4 @@ from emp;
 
 select DISTINCT job
 from emp;
-
+   
