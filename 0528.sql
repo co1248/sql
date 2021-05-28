@@ -15,21 +15,27 @@ from emp e,dept d,salgrade s
 where e.deptno = d.deptno
 and e.sal BETWEEN s.losal and s.hisal;
 
-desc user_indexes;
-desc user_views;
+select *
+from user_indexes;
+select *
+from user_views;
 
-desc all_indexes;
-desc all_views;
+select *
+from all_indexes;
+select *
+from all_views;
 
 --system계정에서 조회
-desc dba_indexes;
-desc dba_views;
+select *
+from dba_indexes;
+select *
+from dba_views;
 
 create index emp_ename
 on emp(ename);
 
 select index_name, table_name
-from user_ind_columns
+from user_indexes
 where table_name in ('EMP');
 
 drop index emp_ename;
