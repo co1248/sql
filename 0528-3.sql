@@ -21,7 +21,7 @@ where sal = (
 --결과값을 조건절의 값으로 활용한다.
 
 --단일행 서브쿼리 (조회결과가 하나인 형태)
---다중행 서브쿼리 (조회결과가 여러개인 형태) in, all, any, some ...
+--다중행 서브쿼리 (조회결과가 여러개인 형태) in, all, any, some(any와 같다) ...
 
 select deptno
 from emp
@@ -106,4 +106,4 @@ from (
             order by hiredate asc
            ) v1
      )
-where rm >=2 and rownum <=3;
+where rm >=2 and rm <=4;
